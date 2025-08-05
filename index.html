@@ -1,0 +1,889 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PPID Kementerian Agama Provinsi Riau</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/logo_kemenag.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crosso
+    rigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+  <!-- animate style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  <!-- Tambahkan di dalam <head> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  <style>
+    /* body {
+        background: linear-gradient(85deg, #07ac3e 0%, #08a365 51%, #2cb5e8 85%);
+      } */
+
+
+    .news-card {
+      transition: all 0.3s ease;
+
+    }
+
+    .news-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .news-image {
+      transition: transform 0.3s ease;
+
+    }
+
+    .news-card:hover .news-image {
+      transform: scale(1.03);
+    }
+
+    .btn-more:hover {
+      background-color: #0b5ed7 !important;
+    }
+
+    .badge-tech {
+      background-color: #dbeafe;
+      color: #1e40af;
+    }
+
+    .badge-economy {
+      background-color: #dcfce7;
+      color: #166534;
+    }
+
+    .badge-health {
+      background-color: #fee2e2;
+      color: #991b1b;
+    }
+
+    #jumbotron {
+      text-shadow: #000 1px 1px;
+    }
+
+    #jumbotron h1 {
+      color: aliceblue;
+
+      font-family: 'Poppins';
+    }
+
+    #jumbotron p {
+      color: aliceblue;
+      font-weight: bold;
+
+    }
+
+    .background-jumbotron {
+      background-image: url("assets/img/jumbotron.jpg");
+      height: 520px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      box-shadow: inset 0 0 0 2000px rgba(17, 67, 1, 0.544);
+    }
+
+    .btn-success {
+      background-color: #096339;
+
+      color: rgb(0, 0, 0);
+    }
+
+    .bg-green {
+      color: #07ac3e;
+    }
+
+    .accordion-button::after {
+      background-color: #ffffff;
+      border-radius: 100%;
+    }
+
+    h2::before,
+    h2::after {
+      content: "";
+      display: inline-block;
+      width: 25%;
+      height: 5px;
+      position: relative;
+      background-color: #198754;
+      vertical-align: middle;
+    }
+
+    h2::before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+
+    h2::after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+
+    .list-group-item:hover {
+      background-color: #e9ecef;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .service {
+      min-width: 180px;
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .service {
+      transition: all 0.5s ease;
+
+    }
+
+    .service:hover {
+      transform: translateY(-9px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .dropdown-item:hover {
+      background-color: #198754;
+      color: white;
+      transition: all 0.5s ease;
+    }
+
+    .dropdown-item:focus {
+      background-color: #198754;
+      color: white;
+
+    }
+
+    .dropdown-item.active {
+      background-color: #198754;
+      color: white;
+
+    }
+
+    .text-divider span {
+      width: 100%;
+      height: 1px;
+      display: block;
+      background-color: #00000000;
+    }
+  </style>
+
+
+  <!--JANGAN DELETE / TAMBAH SCRIPT/STILE/CSS DIATAS-->
+
+</head>
+
+<body>
+  <!--Bagian menu bar atas-->
+  <section id="navbar" class="fixed-top animate__animated animate__fadeInDown">
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark" style="box-shadow: 2px 2px 7px 0px #0000007b; ">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"> <img src="assets/img/logo_ppid_riau.png" alt="ppidriau.kemenag.go.id"
+            width="200px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Profil
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="profil_kanwil.html">Profil Kantor Wilayah Kementerian Agama Provinsi
+                    Riau</a></li>
+                <li><a class="dropdown-item" href="profil_kepala.html">Profil Kepala Kantor Kemenag Kab/Kota</a></li>
+                <li><a class="dropdown-item" href="profil_kua.html">Profil Kantor Urusan Agama</a></li>
+                <li><a class="dropdown-item" href="profil_madrasah.html">Profil Madrasah</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Informasi Publik
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="alamat_kantor.html">Alamat Kantor</a></li>
+                <li><a class="dropdown-item" href="visimisi.html">Visi dan Misi</a></li>
+                <li><a class="dropdown-item" href="strukturorganisasi.html">Struktur Organisasi</a></li>
+                <li><a class="dropdown-item" href="limanilaibudaya.html">Lima Nilai Budaya Kerja Kemenag</a></li>
+                <li><a class="dropdown-item" href="regulasi.html">Regulasi</a></li>
+                <li><a class="dropdown-item" href="lainnya.html">Lainnya</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Layanan Informasi
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="cara_permohonan_informasi.html">Tata Cara Permohonan Informasi</a>
+                </li>
+                <li><a class="dropdown-item" href="pengajuan_keberatan.html">Tata Cara Pengajuan Keberatan</a></li>
+                <li><a class="dropdown-item" href="sengketa_informasi.html">Tata Cara Pengajuan Penyelesaian Sengketa
+                    Informasi</a></li>
+                <li><a class="dropdown-item" href="standar_pengumuman_informasi.html">Standar Pengumuman Informasi</a>
+                </li>
+                <li><a class="dropdown-item" href="pengaduan_masyarakat.html">Tata Cara Pengaduan Masyarakat</a></li>
+                <li><a class="dropdown-item" href="alasan_pengajuan_keberatan.html">Alasan Pengajuan Keberatan</a></li>
+                <li><a class="dropdown-item" href="formPermohonanInformasi.html">Formulir Permintaan Informasi
+                    Publik</a></li>
+                <li><a class="dropdown-item" href="formkeberataninformasi.html">Formulir Keberatan Informasi Publik</a>
+                </li>
+                <li><a class="dropdown-item" href="tandabukti.html">Tanda Bukti Penyerahan Informasi Publik</a></li>
+                <li><a class="dropdown-item" href="soplayanan.html">SOP Layanan Informasi</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Standar Layanan
+              </a>
+              <ul class="dropdown-menu ">
+                <li><a class="dropdown-item" href="maklumat_pelayanan.html">Maklumat Pelayanan</a></li>
+                <li><a class="dropdown-item" href="jadwal_pelayanan.html">Jadwal Pelayanan</a></li>
+                <li><a class="dropdown-item" href="biaya.html">Biaya/Tarif Layanan</a></li>
+                <li><a class="dropdown-item" href="arahkebijakan.html">Arah Kebijakan Layanan</a></li>
+                <li><a class="dropdown-item" href="standar_pelayanan.html">Standar Pelayanan</a></li>
+              </ul>
+            </li>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section> <!-- End Bagian menu bar atas-->
+
+  <!--JANGAN EDIT/HAPUS MENU MENU DIATAS-->
+
+
+  <!--Bagian Jumbotron homepage-->
+  <section id="jumbotron" class="jumbotron-fluid background-jumbotron">
+
+    <div class="container-fluid py-5 text-center animate__animated animate__fadeInDown ">
+      <p class="p-5"><br></p>
+      <h1 class="display-6 fw-bold">Selamat Datang di Portal PPID<br> Kementerian Agama Provinsi Riau</h1>
+      <p class="display-8 fw-normal"><br>Layanan ini merupakan sarana layanan bagi pemohon informasi publik<br>sebagai
+        salah satu wujud pelaksanaan keterbukaan informasi publik di Kementerian Agama.</p>
+
+      <a href="formPermohonanInformasi.html" button id="btn"
+        class="btn btn-success text-white animate__animated animate__slideInUp animate__delay-1s"
+        type="button">Daftarkan
+        Permohonan Informasi
+        </button></a>
+      <a href="formSurveyKepuasanMasyarakat.html" button id="btn"
+        class="btn btn-success text-white animate__animated animate__slideInUp animate__delay-1s" type="button">Survei
+        Kepuasan Masyarakat
+        </button></a>
+
+
+
+    </div>
+    <!--Bagian End Jumbotron homepage-->
+
+  </section>
+
+  <!--FAQ Layanan-->
+  <section class="mx-auto" style="margin-top: 5vw; max-width: 1200px; padding: 0 15px; ">
+    <div class="container" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="500">
+      <div class="w-100 text-center mb-4">
+        <h2 class="text-center fw-bold mb-2 display-5" style="color: #0098da;">Layanan Informasi</h2>
+
+        <p class="text-center text-muted mb-5">Silahkan klik list dibawah ini untuk melihat informasi</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-lg-6 mb-4 g-3">
+          <div class="accordion" id="accordionExample1">
+            <div class="accordion-item">
+              <p class="accordion-header">
+                <button class="accordion-button collapsed text-white fw-bold lh-lg" style="background-color:#198754;"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true"
+                  aria-controls="collapseOne1">
+                  Bagaimana cara pengajuan keberatan informasi publik?
+                </button>
+              </p>
+              <div id="collapseOne1" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                <div class="accordion-body">
+                  Pengajuan keberatan informasi publik dapat
+                  dilakukan dengan mengisi formulir keberatan yang tersedia di website PPID Kemenag Riau. Setelah
+                  mengisi formulir, kirimkan ke alamat email PPID ke alamat Kantor Wilayah Kementerian
+                  Agama Provinsi Riau. Pastikan untuk menyertakan informasi yang jelas mengenai keberatan yang diajukan.
+                  Lebih lanjut klik link berikut <a
+                    href="https://ppid.riau.kemenag.go.id/layanan/keberatan-informasi-publik" target="_blank">Keberatan
+                    Informasi Publik</a>.
+                </div>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="accordion-item">
+              <p class="accordion-header">
+                <button class="accordion-button collapsed text-white fw-bold lh-lg" style="background-color:#198754;"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo1">
+                  Bagaimana Tata cara Pengaduan Masyarakat?
+                </button>
+              </p>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                <div class="accordion-body">
+                  Pengaduan masyarakat dapat dilakukan dengan mengisi formulir pengaduan yang tersedia di website
+                  PPID Kemenag Riau. Setelah mengisi formulir, kirimkan ke alamat email PPID atau melalui layanan
+                  pengaduan online yang disediakan. Pastikan untuk menyertakan informasi yang jelas mengenai
+                  pengaduan yang diajukan. Lebih lanjut klik link berikut <a
+                    href="https://ppid.riau.kemenag.go.id/layanan/pengaduan-masyarakat" target="_blank">Pengaduan
+                    Masyarakat</a>.
+                </div>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="accordion-item">
+              <p class="accordion-header">
+                <button class="accordion-button collapsed text-white fw-bold lh-lg" style="background-color:#198754;"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree1">
+                  Apakah ada Tanda Bukti Penyerahan Informasi Publik?
+                </button>
+              </p>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                <div class="accordion-body">
+                  Tentu, setiap penyerahan informasi publik akan disertai dengan Tanda Bukti Penyerahan Informasi
+                  Publik. Tanda bukti ini berfungsi sebagai bukti bahwa informasi telah diserahkan kepada pemohon.
+                  Tanda bukti ini akan mencantumkan informasi mengenai jenis informasi yang diserahkan, tanggal
+                  penyerahan,
+                  dan tanda tangan petugas yang berwenang. Lebih lanjut klik link berikut <a
+                    href="https://ppid.riau.kemenag.go.id/layanan/tanda-bukti-penyerahan-informasi-publik"
+                    target="_blank">Tanda Bukti Penyerahan Informasi Publik</a>.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-6 mb-4 g-3">
+          <div class="accordion" id="accordionExample2">
+            <div class="accordion-item">
+              <p class="accordion-header">
+                <button class="accordion-button collapsed text-white fw-bold lh-lg" style="background-color:#198754;"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"
+                  aria-controls="collapseOne2">
+                  Apakah ada tarif / biaya layanan?
+                </button>
+              </p>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                  PPID Kementerian Agama Provinsi Riau menyediakan informasi publik secara gratis (tidak dipungut
+                  biaya).
+                  Adapun untuk penggandaan atau perekaman, pemohon/ pengguna informasi publik dapat melakukan
+                  penggandaan/ fotocopy sendiri
+                  di sekitar gedung Kementerian Agama Provinsi Riau atau menyediakan CD/DVD kosong atau flashdisk untuk
+                  perekaman data dan
+                  informasinya.
+                </div>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="accordion-item">
+              <p class="accordion-header">
+                <button class="accordion-button collapsed text-white fw-bold lh-lg" style="background-color:#198754;"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                  aria-controls="collapseTwo2">
+                  Bagaimana SOP Layanan Informasi Publik?
+                </button>
+              </p>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                  SOP Layanan Informasi Publik Kementerian Agama Provinsi Riau mengatur tata cara dan prosedur
+                  dalam memberikan layanan informasi publik kepada masyarakat. SOP ini mencakup langkah-langkah mulai
+                  dari pengajuan permohonan informasi, verifikasi identitas pemohon, penyerahan informasi, hingga
+                  penanganan keberatan atau pengaduan. SOP ini bertujuan untuk memastikan transparansi, akuntabilitas,
+                  dan kepuasan masyarakat dalam mendapatkan informasi publik. Lebih lanjut klik link berikut <a
+                    href="https://ppid.riau.kemenag.go.id/layanan/sop-layanan-informasi-publik" target="_blank">SOP
+                    Layanan Informasi Publik</a>.
+                </div>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="accordion-item">
+              <p class="accordion-header">
+                <button class="accordion-button collapsed text-white fw-bold lh-lg" style="background-color:#198754;"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                  aria-controls="collapseThree2">
+                  Bagaimana cara mengajukan permohonan informasi publik?
+                </button>
+              </p>
+              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                  Cara pengajuan informasi publik dapat dilakukan dengan mengisi formulir permohonan informasi
+                  yang tersedia di website PPID Kemenag Riau. Setelah mengisi formulir, kirimkan ke alamat email PPID
+                  atau melalui layanan permohonan online yang disediakan. Pastikan untuk menyertakan informasi yang
+                  jelas mengenai jenis informasi yang dimohonkan. Lebih lanjut klik link berikut <a
+                    href="https://ppid.riau.kemenag.go.id/layanan/permohonan-informasi-publik"
+                    target="_blank">Permohonan
+                    Informasi Publik</a>.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </section>
+
+  <!--section berita-->
+  <section class="bg-light min-vh-100 py-5">
+
+    <div class="container">
+      <h2 class="text-center fw-bold text-dark mb-2 display-5" data-aos="zoom-in-up" data-aos-duration="1000"
+        data-aos-delay="1000">Informasi Berkala</h2>
+      <p class="text-center text-muted mb-5 " data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1500">
+        Update informasi terbaru seputar Kementerian Agama Provinsi Riau</p>
+
+      <div class="row">
+        <div class="column-12 col-sm-6 col-lg-6 mb-4" data-aos="fade-right" data-aos-duration="1000"
+          data-aos-delay="1500">
+          <!-- News Card 1 -->
+          <div class="news-card bg-white rounded-3 overflow-hidden shadow-md d-flex flex-column flex-md-row">
+            <div class="col-12 col-md-6 overflow-hidden p-0">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Berita Teknologi" class="news-image w-100 h-100 object-fit-cover">
+            </div>
+            <div class="col-md-6 p-4 d-flex flex-column justify-content-between">
+              <div>
+                <div class="d-flex align-items-center mb-2">
+                  <span class="badge badge-tech me-2">Teknologi</span>
+                  <span class="text-muted small"><i class="far fa-clock me-1"></i> 2 jam yang lalu</span>
+                </div>
+                <h5 class="fw-bold text-dark mb-3">Inovasi Terbaru di Dunia AI Mengubah Cara Kerja Perusahaan</h5>
+                <p class="text-muted mb-2">Perusahaan teknologi terkemuka meluncurkan platform AI baru yang diklaim
+                  dapat meningkatkan produktivitas hingga.....</p>
+              </div>
+              <button class="btn btn-primary btn-more align-self-start d-flex align-items-center" type="button">
+                Selengkapnya <i class="fas fa-arrow-right ms-2"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- News Card 1 -->
+          <div class="news-card bg-white rounded-3 overflow-hidden shadow-md d-flex flex-column flex-md-row mt-2">
+            <div class="col-12 col-md-6 overflow-hidden p-0">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Berita Teknologi" class="news-image w-100 h-100 object-fit-cover">
+            </div>
+            <div class="col-md-6 p-4 d-flex flex-column justify-content-between">
+              <div>
+                <div class="d-flex align-items-center mb-2">
+                  <span class="badge badge-tech me-2">Teknologi</span>
+                  <span class="text-muted small"><i class="far fa-clock me-1"></i> 2 jam yang lalu</span>
+                </div>
+                <h5 class="fw-bold text-dark mb-3">Inovasi Terbaru di Dunia AI Mengubah Cara Kerja Perusahaan</h5>
+                <p class="text-muted mb-2">Perusahaan teknologi terkemuka meluncurkan platform AI baru yang diklaim
+                  dapat meningkatkan produktivitas hingga.....</p>
+              </div>
+              <button class="btn btn-primary btn-more align-self-start d-flex align-items-center" type="button">
+                Selengkapnya <i class="fas fa-arrow-right ms-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="column-12 col-sm-6 col-lg-6 mb-4" data-aos="fade-left" data-aos-duration="1000"
+          data-aos-delay="1800">
+          <!-- List berita -->
+          <div class="list-group sticky-top">
+            <h5 class="list-group-item bg-success text-white text-center">Informasi Serta Merta Berkala</h5>
+            <a href="https://shorturl.at/nPCC8"
+              class="list-group-item d-flex justify-content-between align-items-center" target="_blank">
+              1. Struktur Organisasi PPID Kemenag Riau
+              <i class="bi bi-box-arrow-in-right"></i>
+            </a>
+            <a href="https://shorturl.at/nPCC8"
+              class="list-group-item d-flex justify-content-between align-items-center" target="_blank">
+              2. Tugas dan Wewenang PPID
+              <i class="bi bi-box-arrow-in-right"></i>
+            </a>
+            <a href="https://shorturl.at/nPCC8"
+              class="list-group-item d-flex justify-content-between align-items-center" target="_blank">
+              3. Rencana Kerja dan Rencana Strategis
+              <i class="bi bi-box-arrow-in-right"></i>
+            </a>
+            <a href="https://shorturl.at/nPCC8"
+              class="list-group-item d-flex justify-content-between align-items-center" target="_blank">
+              4. Sejarah dan Tujuan PPID
+              <i class="bi bi-box-arrow-in-right"></i>
+            </a>
+            <a href="https://shorturl.at/nPCC8"
+              class="list-group-item d-flex justify-content-between align-items-center" target="_blank">
+              5. Rencana Umum Pengadaan
+              <i class="bi bi-box-arrow-in-right"></i>
+            </a>
+            <a href="https://shorturl.at/nPCC8"
+              class="list-group-item d-flex justify-content-between align-items-center" target="_blank">
+              6. Informasi data Kementerian Agama Provinsi Riau
+              <i class="bi bi-box-arrow-in-right"></i>
+            </a>
+            <a href="https://shorturl.at/nPCC8"
+              class="list-group-item d-flex justify-content-between align-items-center" target="_blank">
+              7. Daftar Informasi Publik
+              <i class="bi bi-box-arrow-in-right"></i>
+            </a>
+            <a href="https://shorturl.at/nPCC8"
+              class="list-group-item d-flex justify-content-between align-items-center" target="_blank">
+              8. Info Nikah
+              <i class="bi bi-box-arrow-in-right"></i>
+            </a>
+            <a href="https://shorturl.at/nPCC8"
+              class="list-group-item d-flex justify-content-between align-items-center" target="_blank">
+              9. Info Haji
+              <i class="bi bi-box-arrow-in-right"></i>
+            </a>
+            <a href="https://shorturl.at/nPCC8"
+              class="list-group-item d-flex justify-content-between align-items-center" target="_blank">
+              10. Info Bimas Islam
+              <i class="bi bi-box-arrow-in-right"></i>
+            </a>
+            <a href="https://shorturl.at/nPCC8"
+              class="list-group-item d-flex justify-content-between align-items-center" target="_blank">
+              11. Info Pendidikan
+              <i class="bi bi-box-arrow-in-right"></i>
+            </a>
+            <a href="https://shorturl.at/nPCC8"
+              class="list-group-item d-flex justify-content-between align-items-center" target="_blank">
+              12. Info Kepegawaian
+              <i class="bi bi-box-arrow-in-right"></i>
+            </a>
+            <a href="infosertamerta.html" class="btn btn-success list-group-item text-white text-center"
+              target="_blank">
+              <i class="bi bi-plus-circle"></i> Lihat Semua Informasi
+            </a>
+          </div>
+
+
+  </section>
+  <!--
+  Layanan Informasi
+  <section class="mx-auto clearfix" style="margin-top: 5vw;">
+    <div class="container">
+      <div class="card"
+        style="box-shadow: 2px 2px 7px 0px #0000007b;border-radius: 15px;border-style: none;border-top-color: #3f7f00;border-bottom-color: #3f7f00;">
+        <div class="card-body text-center" style="padding: 3vw 4vw;">
+          <div style="margin-left: 10px;margin-right: 10px;">
+            <div class="row d-flex align-items-center mb-3">
+              <div class="col d-none d-sm-block align-items-center text-divider" style="background: #25a3ff;"><span
+                  style="background: #00000000;"></span></div>
+              <div class="col-auto text-center text-md-start d-flex align-items-center m-auto"
+                style="padding-bottom: 8px;"><span
+                  style="font-size: min(max(16px, 3.5vw), 24px);color: #0098da;font-weight: bold;font-family: Raleway, sans-serif;">Layanan
+                  Informasi</span></div>
+              <div class="col d-none d-sm-block align-items-center text-divider" style="background: #25a3ff;"><span
+                  style="background: #00000000;"></span></div>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center row-fitur"
+            style="padding-bottom: 0px;padding-top: 5px;margin-top: -11px;">
+            <div class="col-4" style="padding: 3vw 3vw;">
+              <a href="https://ppidjabar.kemenag.go.id/assets/uploads/files/Formulir_Permohonan_Informasi.pdf"
+                style="text-decoration:none">
+                <div class="d-flex justify-content-center align-items-center m-auto fitur-a coolBeans"
+                  style="border-radius: 14px;padding-top: 2vw;padding-bottom: 2vw;padding-right: 1vw;padding-left: 1vw;height: 100%;border: 1px solid rgba(118,118,118,0.39);">
+                  <div><img class="img-fluid" src="https://ppidjabar.kemenag.go.id/assets/front/img/permohonan.png"
+                      style="padding: 4vw;padding-top: 4.8px;padding-bottom: 4.8px;">
+                    <h6 style="font-size: min(max(8px,2.5vw),18px);color: var(--bs-gray-700);font-weight: bold;">
+                      Formulir Permohonan</h6>
+                  </div>
+                </div>
+              </a></div>
+            <div class="col-4" style="padding: 3vw 3vw;">
+              <a href="https://ppidjabar.kemenag.go.id/assets/uploads/files/Formulir_Keberatan.pdf"
+                style="text-decoration:none">
+                <div class="d-flex justify-content-center align-items-center m-auto fitur-a coolBeans"
+                  style="border-radius: 14px;padding-top: 2vw;padding-bottom: 2vw;padding-right: 1vw;padding-left: 1vw;height: 100%;border: 1px solid rgba(118,118,118,0.39);">
+                  <div><img class="img-fluid" src="https://ppidjabar.kemenag.go.id/assets/front/img/keberatan.png"
+                      style="padding: 4vw;padding-top: 4.8px;padding-bottom: 4.8px;">
+                    <h6 style="font-size: min(max(8px,2.5vw),18px);color: var(--bs-gray-700);font-weight: bold;">
+                      Pengajuan Keberatan</h6>
+                  </div>
+                </div>
+              </a></div>
+            <div class="col-4" style="padding: 3vw 3vw;">
+              <a style="text-decoration:none" href="https://ppidjabar.kemenag.go.id/ppid/statistik2022">
+                <div class="d-flex justify-content-center align-items-center m-auto fitur-a coolBeans"
+                  style="border-radius: 14px;padding-top: 2vw;padding-bottom: 2vw;padding-right: 1vw;padding-left: 1vw;height: 100%;border: 1px solid rgba(118,118,118,0.39);">
+                  <div><img class="img-fluid" src="https://ppidjabar.kemenag.go.id/assets/front/img/profil.png"
+                      style="padding: 4vw;padding-top: 4.8px;padding-bottom: 4.8px;">
+                    <h6 style="font-size: min(max(8px,2.5vw),18px);color: var(--bs-gray-700);font-weight: bold;">
+                      Statistik Akses Informasi</h6>
+                  </div>
+                </div>
+              </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  Start: Standar Layanan 
+  <section class="mx-auto clearfix" style="margin: 4vw;">
+    <div class="container">
+      <div class="card"
+        style="box-shadow: 2px 2px 7px 0px #0000007b;border-radius: 15px;border-style: none;border-top-color: #3f7f00;border-bottom-color: #3f7f00;">
+        <div class="card-body text-center" style="padding: 3vw 4vw;">
+          <div style="margin-left: 10px;margin-right: 10px;">
+            <div class="row d-flex align-items-center mb-3">
+              <div class="col d-none d-sm-block align-items-center text-divider" style="background: #a8cf45;"><span
+                  style="background: #00000000;"></span></div>
+              <div class="col-auto text-center text-md-start d-flex align-items-center m-auto"
+                style="padding-bottom: 8px;"><span
+                  style="font-size: min(max(16px, 3.5vw), 24px);color: #3f7f00;font-weight: bold;font-family: Raleway, sans-serif;">Standar
+                  Layanan</span></div>
+              <div class="col d-none d-sm-block align-items-center text-divider" style="background: #a8cf45;"><span
+                  style="background: #00000000;"></span></div>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center row-fitur"
+            style="padding-bottom: 0px;padding-top: 5px;margin-top: -11px;">
+            <div class="col-4" style="padding: 3vw 3vw;">
+              <a href="https://ppidjabar.kemenag.go.id/ppid/prosedur_permohonan_informasi" style="text-decoration:none">
+                <div class="d-flex justify-content-center align-items-center m-auto fitur-a coolBeans"
+                  style="border-radius: 14px;padding-top: 2vw;padding-bottom: 2vw;padding-right: 1vw;padding-left: 1vw;height: 100%;border: 1px solid rgba(118,118,118,0.39);">
+                  <div><img class="img-fluid" src="https://ppidjabar.kemenag.go.id/assets/front//img/prosedur.png"
+                      style="padding: 4vw;padding-top: 4.8px;padding-bottom: 4.8px;">
+                    <h6 style="font-size: min(max(8px,2.5vw),18px);color: var(--bs-gray-700);font-weight: bold;">
+                      Prosedur Pelayanan Informasi</h6>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-4" style="padding: 3vw 3vw;">
+              <a href="https://ppidjabar.kemenag.go.id/ppid/prosedur_pengajuan_keberatan" style="text-decoration:none">
+                <div class="d-flex justify-content-center align-items-center m-auto fitur-a coolBeans"
+                  style="border-radius: 14px;padding-top: 2vw;padding-bottom: 2vw;padding-right: 1vw;padding-left: 1vw;height: 100%;border: 1px solid rgba(118,118,118,0.39);">
+                  <div><img class="img-fluid" src="https://ppidjabar.kemenag.go.id/assets/front/img/prosedur2.png"
+                      style="padding: 4vw;padding-top: 4.8px;padding-bottom: 4.8px;">
+                    <h6 style="font-size: min(max(8px,2.5vw),18px);color: var(--bs-gray-700);font-weight: bold;">
+                      Prosedur Pengajuan Keberatan</h6>
+                  </div>
+                </div>
+              </a></div>
+            <div class="col-4" style="padding: 3vw 3vw;">
+              <a href="https://ppidjabar.kemenag.go.id/ppid/waktu_layanan" style="text-decoration:none">
+                <div class="d-flex justify-content-center align-items-center m-auto fitur-a coolBeans"
+                  style="border-radius: 14px;padding-top: 2vw;padding-bottom: 2vw;padding-right: 1vw;padding-left: 1vw;height: 100%;border: 1px solid rgba(118,118,118,0.39);">
+                  <div><img class="img-fluid" src="https://ppidjabar.kemenag.go.id/assets/front/img/waktu.png"
+                      style="padding: 4vw;padding-top: 4.8px;padding-bottom: 4.8px;">
+                    <h6 style="font-size: min(max(8px,2.5vw),18px);color: var(--bs-gray-700);font-weight: bold;">Waktu
+                      Layanan<br></h6>
+                  </div>
+                </div>
+              </a></div>
+            <div class="col-4" style="padding: 3vw 3vw;">
+              <a href="https://ppidjabar.kemenag.go.id/ppid/biaya_layanan" style="text-decoration:none">
+                <div class="d-flex justify-content-center align-items-center m-auto fitur-a coolBeans"
+                  style="border-radius: 14px;padding-top: 2vw;padding-bottom: 2vw;padding-right: 1vw;padding-left: 1vw;height: 100%;border: 1px solid rgba(118,118,118,0.39);">
+                  <div><img class="img-fluid" src="https://ppidjabar.kemenag.go.id/assets/front/img/biaya.png"
+                      style="padding: 4vw;padding-top: 4.8px;padding-bottom: 4.8px;">
+                    <h6 style="font-size: min(max(8px,2.5vw),18px);color: var(--bs-gray-700);font-weight: bold;">Biaya
+                      Layanan<br></h6>
+                  </div>
+                </div>
+              </a></div>
+            <div class="col-4" style="padding: 3vw 3vw;">
+              <a href="https://ppidjabar.kemenag.go.id/ppid/maklumat" style="text-decoration:none">
+                <div class="d-flex justify-content-center align-items-center m-auto fitur-a coolBeans"
+                  style="border-radius: 14px;padding-top: 2vw;padding-bottom: 2vw;padding-right: 1vw;padding-left: 1vw;height: 100%;border: 1px solid rgba(118,118,118,0.39);">
+                  <div><img class="img-fluid" src="https://ppidjabar.kemenag.go.id/assets/front/img/maklumat.png"
+                      style="padding: 4vw;padding-top: 4.8px;padding-bottom: 4.8px;">
+                    <h6 style="font-size: min(max(8px,2.5vw),18px);color: var(--bs-gray-700);font-weight: bold;">
+                      Maklumat PPID<br></h6>
+                  </div>
+                </div>
+              </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> End Standar Layanan -->
+
+  <!-- aplikasi-->
+  <section id="aplikasi" class="bg-light p-4">
+
+    <div class="container mb-5">
+      <div class="aplikasi-box" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="1500">
+        <h2 class="text-center fw-bold text-dark mb-2 display-5">Aplikasi Kemenag</h2>
+        <p class="text-center text-muted mb-5">Aplikasi pelayanan Kementerian Agama Provinsi Riau</p>
+
+        <div class="box pt-4 d-flex gap-3 flex-md-row flex-column justify-content-center align-items-stretch"
+          data-aos="flip-up" data-aos-duration="2500" data-aos-delay="2000">
+          <div class="service p-4 shadow bg-light text-white rounded-4 h-100">
+            <div class="text-center">
+              <img src="assets/img/logo_kemenag.png" alt="Logo Kemenag" class="img-fluid mb-3"
+                style="max-width: 100px;">
+              <h3 class="bg-green">Web Utama</h3>
+            </div>
+          </div>
+          <div class="service p-4 shadow bg-light text-white rounded-4 h-100">
+            <div class="text-center">
+              <img src="assets/img/pusaka_icon.png" alt="Logo Pusaka" class="img-fluid mb-3" style="max-width: 100px;">
+              <h3 class="bg-green">Pusaka</h3>
+            </div>
+          </div>
+          <div class="service p-4 shadow bg-light text-white rounded-4 h-100">
+            <div class="text-center">
+              <img src="assets/img/halal.png" alt="Logo halal" class="img-fluid mb-3" style="max-width: 85px;">
+              <h3 class="bg-green">Halal</h3>
+            </div>
+          </div>
+          <div class="service p-4 shadow bg-light text-white rounded-4 h-100">
+            <div class="text-center">
+              <img src="assets/img/lpse-logo.png" alt="Logo LPSE" class="align-content-xxl-center"
+                style="max-width: 100px;"><br>
+              <h3 class="bg-green">LPSE</h3>
+            </div>
+          </div>
+
+          <div class="service p-4 shadow bg-light text-white rounded-4 h-100">
+            <div class="text-center">
+              <img src="assets/img/logo_simas.png" alt="Logo simas" class="img-fluid mb-3" style="max-width: 100px;">
+              <h3 class="bg-green">WEB Simas</h3>
+            </div>
+          </div>
+          <div class="service p-4 shadow bg-light text-white rounded-4 h-100">
+            <div class="text-center">
+              <img src="assets/img/logo-srikandi-new-3-CXiv1gnc.png" alt="Logo Srikandi" class="img-fluid mb-3"
+                style="max-width: 100px;">
+              <h3 class="bg-green">Web Srikandi</h3>
+            </div>
+          </div>
+          <div class="service p-4 shadow bg-light text-white rounded-4 h-100">
+            <div class="text-center">
+              <img src="assets/img/logo_simkah.png" alt="Logo Simkah" class="img-fluid mb-3" style="max-width: 100px;">
+              <h3 class="bg-green">Web Simkah</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!--About footer-->
+  <section class="footer bg-success text-white py-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+    <div class="container">
+      <div class="footer-box">
+        <div class="row gy-4 align-items-start">
+          <!-- Info Sekretariat -->
+          <div class="col-12 col-md-4">
+            <!-- <img src="/assets/img/logo_kemenag.png" alt="Logo Kemenag" class="img-fluid mb-3" style="max-width: 75px;"> -->
+            <h3 class="text-white mb-2">Sekretariat PPID</h3>
+            <hr class="border-light my-2">
+            <div class="text-white small">
+              <div class="fw-bold mb-1">Alamat:</div>
+              Jl. Sudirman No. 235 Pekanbaru - Riau <br>
+              Email: <a href="mailto:kanwilriau@kemenag.go.id"
+                class="text-white text-decoration-underline">kanwilriau@kemenag.go.id</a>
+            </div>
+          </div>
+          <!-- Sosial Media -->
+          <div class="col-12 col-md-4">
+            <h4 class="text-white mb-3">Sosial Media</h4>
+            <div class="d-flex flex-column gap-2">
+              <a href="https://www.facebook.com/kanwilkemenagriau/"
+                class="text-white text-decoration-none d-flex align-items-center" target="_blank">
+                <i class="bi bi-facebook me-2"></i> Facebook
+              </a>
+              <a href="https://www.instagram.com/kementerian_agama_riau/"
+                class="text-white text-decoration-none d-flex align-items-center" target="_blank">
+                <i class="bi bi-instagram me-2"></i> Instagram
+              </a>
+              <a href="https://www.tiktok.com/@kementerian_agama_riau"
+                class="text-white text-decoration-none d-flex align-items-center" target="_blank">
+                <i class="bi bi-tiktok me-2"></i> Tiktok
+              </a>
+              <a href="https://www.youtube.com/@kemenagriau6394"
+                class="text-white text-decoration-none d-flex align-items-center" target="_blank">
+                <i class="bi bi-youtube me-2"></i> YouTube
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <h5 class="text-white mb-3">Lokasi Sekretariat PPID <br>Kementerian Agama Provinsi Riau</h5>
+            <div class="ratio ratio-21x9 rounded-3 overflow-hidden mx-auto" style="max-width: 650px;">
+              <iframe
+                src="https://www.google.com/maps?q=Kantor+Wilayah+Kementerian+Agama+Provinsi+Riau,+Jl.+Sudirman+No.+235,+Pekanbaru,+Riau&output=embed"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="my-3">
+
+      <div class="text-center bg-success">
+        <p>2025 Kementerian Agama Provinsi Riau. All rights reserved.
+          Developed by Tim PRAKOM Kemenag Riau</p>
+      </div>
+  </section>
+
+  <!--JANGAN DELETE SCRIPT-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#demo").on("hide.bs.collapse", function () {
+        $(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Open');
+      });
+      $("#demo").on("show.bs.collapse", function () {
+        $(".btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Close');
+      });
+    });
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+
+
+</body>
+
+</html>
